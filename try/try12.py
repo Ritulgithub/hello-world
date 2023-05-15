@@ -96,3 +96,33 @@ def get_maximum():
 celsius = get_maximum()
 fahrenheit = celsius * 1.8 + 32
 print(fahrenheit)
+
+def circle_ara(r):
+    pi = 3.14
+    area = 2*pi * r**2
+    return area
+
+
+def get_area(x=10):
+    return x * 2
+
+
+area = get_area()
+print(area)
+
+def get_area(x=10):
+    return x * 2
+
+
+area = get_area(x=1)
+print(area)
+
+
+def get_age(year_of_birth, current_year=2023):
+    age = current_year - year_of_birth
+    return age
+
+
+birth = int(input("What is your year of birth?"))
+age = get_age(birth)
+print(age)
